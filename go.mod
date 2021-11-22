@@ -1,4 +1,4 @@
-module github.com/alexmeuer/wowicon-dl
+module github.com/alexmeuer/wow-icon-downloader
 
 go 1.16
 

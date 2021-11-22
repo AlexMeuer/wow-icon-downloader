@@ -59,8 +59,7 @@ func main() {
 
 	if numErrs == 0 {
 		fmt.Println(chalk.Green, "All downloads completed successfully.", chalk.Reset)
-	}
-	if numErrs < len(slugs) {
+	} else if numErrs < len(slugs) {
 		fmt.Printf(chalk.Yellow.Color("\nCompleted with %d errors.\n"), numErrs)
 	} else {
 		fmt.Println(chalk.Red, "All downloads failed.", chalk.Reset)
